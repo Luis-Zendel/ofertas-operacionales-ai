@@ -36,9 +36,11 @@ P1. ¿En qué horas del día y en qué zonas la operación alcanza niveles crít
 - Evaluar el ratio por hora y zona, ya que el número de ordenes y número de repartidores activos se relacionan a esos 2 parámetros
 P2. ¿Qué variable externa del dataset se correlaciona con el deterioro del ratio operacional? Describe el mecanismo.
 - El dataset cuenta con **PRECIPITATION_MM** que es una variable externa meteorológica.
+- Hay que analizar si el que exista precipitación genera saturación o sobre demanda. 
 P3. ¿Todas las zonas responden igual a esa variable? Identifica las más vulnerables y explica por qué tienen mayor sensibilidad.
-- 
+- Medir la sensibilidad pro zona, las zonas con mayor sensibilidad esta asosiada con la saturación, ya que muchos clientes pretenden no salir si **PRECIPITATION_MM** es alta pero al mismo tiempo muchos repartidores no están activos. 
 P4. ¿El nivel de earnings (incentivos) está bien calibrado a lo largo del mes? ¿Detectas periodos con gasto ineficiente? Muestra los días exactos.
+- 
 P5. ¿Qué relación tiene el nivel de earnings con la saturación operacional? ¿Es una relación simple o depende de otras condiciones?
 
 ENTREGABLE:
